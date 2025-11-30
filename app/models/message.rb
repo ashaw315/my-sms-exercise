@@ -3,6 +3,7 @@ class Message
   include Mongoid::Timestamps
 
   field :content, type: String
+  field :recipient_number, type: String
   field :sent_at, type: Time
   field :status, type: String, default: "pending"
   field :twilio_sid, type: String
