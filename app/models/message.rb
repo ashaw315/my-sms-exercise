@@ -13,4 +13,5 @@ class Message
 
   belongs_to :user 
   validates :content, presence: true
+  validates :recipient_number, presence: true
 end

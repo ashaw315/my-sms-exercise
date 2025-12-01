@@ -11,7 +11,7 @@ class Api::MessagesController < ApplicationController
         if @messages.save
             render json: @messages, status: :created
         else
-            render json: { errors: @messages.errors.full_messages }, status: :unprocessable_entity
+            render json: { errors: @messages.errors.full_messages }, status: :unprocessable_content
         end
     end
 

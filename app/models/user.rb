@@ -41,5 +41,5 @@ class User
   # Index for email uniqueness and faster lookups
   index({ email: 1 }, { unique: true, name: "email_index", background: true })
 
-  validates :email, presence: true, uniqueness: true
+  validates :email, presence: true
 end
